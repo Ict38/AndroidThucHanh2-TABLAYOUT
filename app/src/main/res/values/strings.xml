@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">thuchanh2-bai4</string>
+    <string-array name="tacgia">
+        <item>TRAN DINH QUE</item>
+        <item>NGUYEN MANH SON</item>
+    </string-array>
+</resources>

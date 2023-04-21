@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Tìm kiếm Sách"
+        android:gravity="center"
+        android:id="@+id/title"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nhập tên tác giả hoặc tên sách"
+        android:layout_below="@id/title"
+        android:id="@+id/searchInput"/>
+
+    <Button
+        android:id="@+id/btnSearch"
+        android:layout_width="120dp"
+        android:layout_marginVertical="20dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:background="@drawable/custom_button"
+        android:text="Tìm"
+        android:layout_below="@id/searchInput" />
+
+    <Button
+        android:id="@+id/btnGetStatistic"
+        android:layout_width="120dp"
+        android:layout_marginVertical="20dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="50dp"
+        android:background="@drawable/custom_button"
+        android:text="Thống kê"
+        android:layout_below="@id/searchInput" />
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnSearch"
+        android:id="@+id/rvSearch"
+        android:layout_marginVertical="20dp"
+        android:layout_marginHorizontal="10dp"
+        />
+
+</RelativeLayout>
